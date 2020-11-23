@@ -74,7 +74,7 @@ legend {
 
 legend {
   padding-top: 1.5rem;
-  padding-bottom: .4rem;
+  padding-bottom: .7rem;
 }
 
 p, 
@@ -102,9 +102,13 @@ hr {
   margin-top: 3px;
 }
 
+.hr-2 {
+  margin-top: 1.5rem;
+}
+
 #zip {
-  width: 9rem;
-  margin-bottom: 1.5rem;
+  width: 150px;
+  margin: 0;
 }
 
 label[for="other"] {
@@ -167,7 +171,8 @@ select {
   } 
 
   .contact input,
-  .contact select {
+  .contact select,
+  #zip-fix {
     flex-basis: 400px;
     flex-grow: 4;
   }
@@ -180,9 +185,12 @@ select {
 
    .contact input,
    .contact select,
-   .contact label {
+   .contact label,
+   #zip-fix {
     margin-top: .5rem;
     margin-bottom: .5rem;
    }
+
+
 
 }
