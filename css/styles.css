@@ -119,11 +119,13 @@ label[for="other"] {
 
 /* Input stuff */
 
-/* input:focus,
-textarea:focus {
-  border-color: #2d3944;
-} */
-/* not yet sure why this isn't working */
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+  outline-color: #2d3944;
+  outline-style: auto;
+}
 
 input,
 select,
@@ -131,6 +133,7 @@ textarea,
 button {
   border-radius: 5px;
   border-style: none;
+  /* transition: background-color 3s; */
 }
 
 input[type="text"],
@@ -159,6 +162,31 @@ button {
 
 select {
   padding-left: .5rem;
+}
+
+/* Extra styles */
+
+/* .intro {
+  background: radial-gradient(white 200px, #53bbb4, white);
+} */
+
+.intro {
+  background-image: url(https://placeimg.com/600/150/tech);
+  background-color: rgba(83,187,180, 100);
+  background-blend-mode: multiply;
+  color: white;
+  border-radius: 5px;
+}
+
+.intro p {
+  color: white;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  background-color: rgba(83,187,180, .25);
+  transition: background-color 1s;
 }
 
 /* Larger screens */
@@ -190,7 +218,5 @@ select {
     margin-top: .5rem;
     margin-bottom: .5rem;
    }
-
-
 
 }

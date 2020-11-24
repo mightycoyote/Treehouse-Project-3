@@ -26,15 +26,15 @@
                 <fieldset class="contact">
                     <legend>Contact Information</legend>
                     <label for="name">Full Name</label>
-                    <input type="text" id="name" name="user-name" placeholder="Required">
+                    <input type="text" id="name" name="user-name" placeholder="Required" required>
                     <label for="email">Email Address</label>
-                    <input type="email" id="email" name="user-email" placeholder="Required">
+                    <input type="email" id="email" name="user-email" placeholder="Required" required>
                     <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="user-phone">
+                    <input type="tel" id="phone" name="user-phone" placeholder="Optional">
                     <label for="addr">Street Address</label>
-                    <input type="text" id="addr" name="user-addr">
+                    <input type="text" id="addr" name="user-addr" placeholder="Needed if looking up existing membership">
                     <label for="city">City</label>
-                    <input type="text" id="city" name="user-city">
+                    <input type="text" id="city" name="user-city" placeholder="Needed if looking up existing membership">
                     <label for="state">State</label>
                     <select id="state" name="user-state"> <!-- I did not type out all of these! From https://gist.github.com/jwmalara/11190014 -->
                         <option value="">Choose State</option>
